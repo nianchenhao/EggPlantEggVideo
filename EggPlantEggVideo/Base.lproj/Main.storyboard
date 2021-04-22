@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I3V-Ky-H00">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17701"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Egg Plant Egg Table View Controller-->
+        <scene sceneID="bvl-jG-g3D">
+            <objects>
+                <tableViewController id="I3V-Ky-H00" customClass="EggPlantEggTableViewController" customModule="EggPlantEggVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="95P-xe-cDn">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eggPlantEggCell" rowHeight="180" id="W4Z-bo-tzk" userLabel="EggPlantEggCell" customClass="EggPlantEggTableViewCell" customModule="EggPlantEggVideo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="390" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W4Z-bo-tzk" id="cXe-6p-UAb">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BJZ-eI-aU4">
+                                            <rect key="frame" x="20" y="26" width="216" height="128"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2T-DO-b2k">
+                                            <rect key="frame" x="245" y="26" width="147" height="66"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpX-bQ-kaw">
+                                            <rect key="frame" x="244" y="100" width="120" height="54"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BJZ-eI-aU4" secondAttribute="bottom" constant="26" id="MQr-kN-sF9"/>
+                                    <constraint firstItem="BJZ-eI-aU4" firstAttribute="top" secondItem="W4Z-bo-tzk" secondAttribute="top" constant="26" id="Y7d-sR-f5u"/>
+                                    <constraint firstItem="BJZ-eI-aU4" firstAttribute="leading" secondItem="W4Z-bo-tzk" secondAttribute="leading" constant="20" id="f1O-yn-5my"/>
+                                    <constraint firstAttribute="trailing" secondItem="BJZ-eI-aU4" secondAttribute="trailing" constant="154" id="jVt-8T-HGz"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="eggPlantEggImageView" destination="BJZ-eI-aU4" id="gbT-NF-ZbH"/>
+                                    <outlet property="eggPlantEggIntro" destination="kpX-bQ-kaw" id="eFn-AJ-16Z"/>
+                                    <outlet property="eggPlantEggLabel" destination="y2T-DO-b2k" id="kkR-zH-Pmt"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I3V-Ky-H00" id="nYf-Gy-IX5"/>
+                            <outlet property="delegate" destination="I3V-Ky-H00" id="cxO-h6-zdJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBH-ys-KAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475.38461538461536" y="94.549763033175353"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
